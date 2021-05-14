@@ -8,8 +8,8 @@ For this project I'm going to use HTML5, CSS3, JavaScript ES6, LESS, and webpack
 
 ## Task list
 
-- [ ] Install Node.js and set up webpack, npm and required plugins
-- [ ] Create index.html template
+- [x] Install Node.js and set up webpack, npm and required plugins
+- [x] Create index.html template
 - [ ] Add mobile-first styles and JS for index.html using LESS
 - [ ] Compile and commit output to Main branch
 
