@@ -6,11 +6,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <header>
+      <div class="menu--mobile" aria-label="menu" tabindex="0">
+        <input type="checkbox" name="menu" id="menu-button">
+        <label for="menu-button"></label>
+      </div>
+      <nav class="main-nav main-nav--header">
+        <ul>
+          <li>
+            <a href="#" class="nav__link" title="Browse women's collection">Women</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link" title="Browse men's collection">Men</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link" title="Browse new collection">New</a>
+          </li>
+        </ul>
+      </nav>
+      <span class="logo logo--header">
+        <strong>Nimes</strong>
+      </span>
+      <nav class="service-nav">
+        <ul>
+          <li>
+            <a href="#" class="cart-button">Browse cart</a>
+          </li>
+          <li>
+            <a href="#" class="search-button">Search for products</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="banner">
+      <a href="#" class="banner__forwarder--desktop" title="Check out our Fall collection">Go to promo</a>
+      <div class="banner__desc">
+        <p>The quality you deserve</p>
+        <h1>Denim</h1>
+        <a href="#" class="btn">Check new collection</a>
+      </div>
+      <div class="banner__img">
+        <img src="" alt="Denim jacket" srcset="">
+      </div>
+      <div class="banner__social--desktop">
+        <ul>
+          <li><a href="#" class="nav__link nav__link--social">Facebook</a></li>
+          <li><a href="#" class="nav__link nav__link--social">Instagram</a></li>
+        </ul>
+      </div>
+    </section>
     <main>
-      <h1>Hello from Webpack</h1>
-      <div class="js-inserts"></div>
-      <img src="images/image-01.jpg" alt="Image1">
-      <img src="images/image-03.png" alt="Image3">
+      <section class="bestsellers">
+        <div class="section-desc">
+          <h2 class="section-title">Bestsellers</h2>
+          <a href="#" class="nav__link nav__link--section">View all</a>
+        </div>
+        <div class="item-container">
+          <article class="item">
+            <picture class="item-img">
+              <source media="(min-width: 768px)" srcset="">
+              <source media="(min-width: 1366px)" srcset="">
+              <img src="" alt="Jacket">
+            </picture>
+            <div class="item-desc">
+              <h4 class="item-title">Jacket</h4>
+              <span class="item-price">&#36; 120</span>
+            </div>
+          </article>
+          <article class="item">
+            <picture class="item-img">
+              <source media="(min-width: 768px)" srcset="">
+              <source media="(min-width: 1366px)" srcset="">
+              <img src="" alt="Overalls">
+            </picture>
+            <div class="item-desc">
+              <h4 class="item-title">Overalls</h4>
+              <span class="item-price">&#36; 140</span>
+            </div>
+          </article>
+          <article class="item">
+            <picture class="item-img">
+              <source media="(min-width: 768px)" srcset="">
+              <source media="(min-width: 1366px)" srcset="">
+              <img src="" alt="Jacket">
+            </picture>
+            <div class="item-desc">
+              <h4 class="item-title">Jacket</h4>
+              <span class="item-price">&#36; 90</span>
+            </div>
+          </article>
+          <article class="item">
+            <picture class="item-img">
+              <source media="(min-width: 768px)" srcset="">
+              <source media="(min-width: 1366px)" srcset="">
+              <img src="" alt="Overalls">
+            </picture>
+            <div class="item-desc">
+              <h4 class="item-title">Overalls</h4>
+              <span class="item-price">&#36; 160</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="promo">
+        <picture class="promo__img">
+          <source media="(min-width: 768px)" srcset="">
+          <source media="(min-width: 1366px)" srcset="">
+          <img src="" alt="Denim Fall collection">
+        </picture>
+        <div class="promo__desc">
+          <h3 class="promo__title">Street fashion collection <span class="promo__title--accent">Fall 2019</span></h3>
+          <a href="#" class="btn">Shop now</a>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="section-desc">
+          <h2 class="section-title">Shop by category</h2>
+          <a href="#" class="nav__link nav__link--section">View all</a>
+        </div>
+        <div class="item-container">
+          <article class="item">
+            <picture class="item-img">
+              <source media="(min-width: 768px)" srcset="">
+              <source media="(min-width: 1366px)" srcset="">
+              <img src="" alt="Jeans">
+            </picture>
+            <div class="item-desc">
+              <h4 class="item-title">Jeans</h4>
+            </div>
+          </article>
+          <article class="item item--tile">
+            <picture class="item-img">
+              <source media="(min-width: 768px)" srcset="">
+              <source media="(min-width: 1366px)" srcset="">
+              <img src="" alt="Shirts">
+            </picture>
+            <div class="item-desc">
+              <h4 class="item-title">Shirts</h4>
+            </div>
+          </article>
+          <article class="item">
+            <picture class="item-img">
+              <source media="(min-width: 768px)" srcset="">
+              <source media="(min-width: 1366px)" srcset="">
+              <img src="" alt="Jackets">
+            </picture>
+            <div class="item-desc">
+              <h4 class="item-title">Jackets</h4>
+            </div>
+          </article>
+          <article class="item item--tile">
+            <picture class="item-img">
+              <source media="(min-width: 768px)" srcset="">
+              <source media="(min-width: 1366px)" srcset="">
+              <img src="" alt="Overalls">
+            </picture>
+            <div class="item-desc">
+              <h4 class="item-title">Overalls</h4>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+    <footer>
+      <span class="logo logo--footer">
+        <strong>Nimes</strong>
+      </span>
+      <nav class="main-nav main-nav--footer">
+        <ul>
+          <li>
+            <a href="#" class="nav__link nav__link--footer" title="Shop by category">Shop</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link nav__link--footer" title="Find out our delivery terms">Delivery</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link nav__link--footer" title="Read our terms of service">Service</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link nav__link--footer" title="List of all pages on this website">Sitemap</a>
+          </li>
+          <li>
+            <a href="#" class="nav__link nav__link--footer" title="Give us feedback">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="social-nav">
+        <ul>
+          <li>
+            <a href="#" class="social-btn" title="Visit us on Facebook">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="social-btn" title="Visit us on Instagram">Instagram</a>
+          </li>
+          <li>
+            <a href="#" class="social-btn" title="Visit us on Pinterest">Pinterest</a>
+          </li>
+          <li>
+            <a href="#" class="social-btn" title="Visit us on Twitter">Twitter</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
