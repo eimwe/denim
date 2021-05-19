@@ -25,6 +25,10 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    padding: 1em 0;
+  }
+  
   .main-nav--header {
     .social-nav();
   }
@@ -34,6 +38,34 @@ header {
       justify-content: flex-end;
       li + li {
         margin-left: 2.5em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .main-nav--header {
+    transform: translateY(9em);
+    ul {
+    flex-direction: column;
+    align-items: flex-start;
+      li + li {
+        margin-left: 0;
+        margin-top: 2em;
+      }
+    }
+  }
+  
+  .service-nav {
+    transform: translateY(7.5em);
+    ul {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 65%;
+    right: 12%;
+      li + li {
+        margin-left: 0;
+        margin-bottom: 2em;
       }
     }
   }
