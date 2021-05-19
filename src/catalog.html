@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Nîmes Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
   </head>
   <body>
     <header class="wrapper flex-container">
+      <div class="menu--mobile" aria-label="menu" tabindex="0">
+        <input type="checkbox" name="menu" id="menu-button">
+        <label for="menu-button"></label>
+      </div>
       <nav class="main-nav--header">
         <ul class="flex-container">
           <li>
@@ -42,140 +47,6 @@
         </ul>
       </nav>
     </header>
-    <section class="banner">
-      <div class="wrapper flex-container">
-        <a href="#" class="banner__forwarder--desktop" title="Check out our Fall collection">Go to promo</a>
-        <picture class="banner__img">
-          <source media="(min-width: 1366px)" srcset="./images/main/banner/denim-jacket-1366w.png">
-          <source media="(min-width: 768px)" srcset="./images/main/banner/denim-jacket-768w.png">
-          <img src="./images/main/banner/denim-jacket.png" alt="Denim jacket">
-        </picture>
-        <div class="banner__desc">
-          <p>The quality you deserve</p>
-          <h1>Denim</h1>
-          <a href="#" class="btn">Check new collection</a>
-        </div>
-        <div class="banner__social--desktop">
-          <ul>
-            <li><a href="#" class="nav__link nav__link--social">Facebook</a></li>
-            <li><a href="#" class="nav__link nav__link--social">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="wrapper bestsellers">
-      <div class="section-desc flex-container">
-        <h2 class="section-title">Bestsellers</h2>
-        <a href="#" class="nav__link nav__link--section">View all</a>
-      </div>
-      <div class="item-container flex-container">
-        <article class="item">
-          <picture class="item-img">
-            <source media="(min-width: 1366px)" srcset="./images/main/best/jacket-best-1366w.png">
-            <source media="(min-width: 768px)" srcset="./images/main/best/jacket-best-768w.png">
-            <img src="./images/main/best/jacket-best.png" alt="Jacket">
-          </picture>
-          <div class="item-desc">
-            <h4 class="item-title">Jacket</h4>
-            <span class="item-price">&#36; 120</span>
-          </div>
-        </article>
-        <article class="item">
-          <picture class="item-img">
-            <source media="(min-width: 1366px)" srcset="./images/main/best/overalls-best-1366w.png">
-            <source media="(min-width: 768px)" srcset="./images/main/best/overalls-best-768w.png">
-            <img src="./images/main/best/overalls-best.png" alt="Overalls">
-          </picture>
-          <div class="item-desc">
-            <h4 class="item-title">Overalls</h4>
-            <span class="item-price">&#36; 140</span>
-          </div>
-        </article>
-        <article class="item">
-          <picture class="item-img">
-            <source media="(min-width: 1366px)" srcset="./images/main/best/jacket-best-2-1366w.png">
-            <source media="(min-width: 768px)" srcset="./images/main/best/jacket-best-2-768w.png">
-            <img src="./images/main/best/jacket-best-2.png" alt="Jacket">
-          </picture>
-          <div class="item-desc">
-            <h4 class="item-title">Jacket</h4>
-            <span class="item-price">&#36; 90</span>
-          </div>
-        </article>
-        <article class="item">
-          <picture class="item-img">
-            <source media="(min-width: 1366px)" srcset="./images/main/best/overalls-best-2-1366w.png">
-            <source media="(min-width: 768px)" srcset="./images/main/best/overalls-best-2-768w.png">
-            <img src="./images/main/best/overalls-best-2.png" alt="Overalls">
-          </picture>
-          <div class="item-desc">
-            <h4 class="item-title">Overalls</h4>
-            <span class="item-price">&#36; 160</span>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="promo flex-container">
-      <picture class="promo__img">
-        <source media="(min-width: 1366px)" srcset="./images/main/promo/promo-1366w.png">
-        <source media="(min-width: 768px)" srcset="./images/main/promo/promo-768w.png">
-        <img src="./images/main/promo/promo.png" alt="Denim Fall collection">
-      </picture>
-      <div class="promo__desc">
-        <div class="promo__desc__wrapper">
-          <h3 class="promo__title">Street fashion collection <span class="promo__title--accent">Fall 2019</span></h3>
-          <a href="#" class="btn">Shop now</a>
-        </div>
-      </div>
-    </section>
-    <section class="wrapper categories">
-      <div class="section-desc flex-container">
-        <h2 class="section-title">Shop by category</h2>
-        <a href="#" class="nav__link nav__link--section">View all</a>
-      </div>
-      <div class="item-container flex-container">
-        <article class="item">
-          <picture class="item-img">
-            <source media="(min-width: 1366px)" srcset="./images/main/category/jeans-1366w.png">
-            <source media="(min-width: 768px)" srcset="./images/main/category/jeans-768w.png">
-            <img src="./images/main/category/jeans.png" alt="Jeans">
-          </picture>
-          <div class="item-desc">
-            <h4 class="item-title">Jeans</h4>
-          </div>
-        </article>
-        <article class="item item--tile">
-          <picture class="item-img">
-            <source media="(min-width: 1366px)" srcset="./images/main/category/shirts-1366w.png">
-            <source media="(min-width: 768px)" srcset="./images/main/category/shirts-768w.png">
-            <img src="./images/main/category/shirts.png" alt="Shirts">
-          </picture>
-          <div class="item-desc">
-            <h4 class="item-title">Shirts</h4>
-          </div>
-        </article>
-        <article class="item">
-          <picture class="item-img">
-            <source media="(min-width: 1366px)" srcset="./images/main/category/jackets-1366w.png">
-            <source media="(min-width: 768px)" srcset="./images/main/category/jackets-768w.png">
-            <img src="./images/main/category/jackets.png" alt="Jackets">
-          </picture>
-          <div class="item-desc">
-            <h4 class="item-title">Jackets</h4>
-          </div>
-        </article>
-        <article class="item item--tile">
-          <picture class="item-img">
-            <source media="(min-width: 1366px)" srcset="./images/main/category/overalls-1366w.png">
-            <source media="(min-width: 768px)" srcset="./images/main/category/overalls-768w.png">
-            <img src="./images/main/category/overalls.png" alt="Overalls">
-          </picture>
-          <div class="item-desc">
-            <h4 class="item-title">Overalls</h4>
-          </div>
-        </article>
-      </div>
-    </section>
     <footer>
       <div class="wrapper">
         <span class="logo logo--footer">

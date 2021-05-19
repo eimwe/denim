@@ -12,10 +12,13 @@ if (process.env.NODE_ENV === 'production') {
 module.exports = {
   mode: mode,
   
-  entry: './src/index.js',
+  entry: {
+    main: './src/index.js',
+    catalog: './src/catalog.js',
+  },
   
   output: {
-    filename: './js/script.js',
+    filename: './js/[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -79,14 +82,17 @@ module.exports = {
       ],
     }),
     new MiniCssExtractPlugin({
-      filename: './css/style.css',
+      filename: './css/[name].css',
     }),
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: './src/index.html',
+      chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
-      filename: 'inner.html',
-      template: './src/inner.html',
+      filename: 'catalog.html',
+      template: './src/catalog.html',
+      chunks: ['catalog'],
     }),
   ],
 
