@@ -23,3 +23,18 @@ header {
   width: 20%;
   right: 5%;
 }
+
+@media only screen and (min-width: 768px) {
+  .main-nav--header {
+    .social-nav();
+  }
+
+  .service-nav {
+    ul {
+      justify-content: flex-end;
+      li + li {
+        margin-left: 2.5em;
+      }
+    }
+  }
+}
