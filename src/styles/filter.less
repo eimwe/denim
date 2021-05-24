@@ -312,3 +312,29 @@ input[type=reset] {
     }
   }
 }
+
+@media only screen and (min-width: 1366px) {
+  .filter {
+    width: 20.5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  input[type=submit],
+  input[type=reset] {
+    width: 84%;
+  }
+  
+  input[type=radio] {
+    margin-right: .85em;
+  }
+
+  .collect {
+    margin-top: .3em;
+    input[type=checkbox] {
+      & + label {
+        margin-right: 1.7em;
+      }
+    }
+  }
+}

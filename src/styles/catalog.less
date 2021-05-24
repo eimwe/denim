@@ -135,3 +135,55 @@ progress {
     font-size: 1.125rem;
   }
 }
+
+@media only screen and (min-width: 1366px) {
+  .banner {
+    .wrapper.flex-container {
+      justify-content: center;
+    }
+  }
+
+  .banner__img-wrapper {
+    margin-right: 0;
+  }
+
+  .banner__area__title {
+    & > .item__link {
+      font-size: 2rem;
+    }
+  }
+
+  .item {
+    margin-bottom: 4em;
+    &--large {
+      flex-basis: 100%;
+      margin-left: 54%;
+    }
+    &--large + .item {
+      top: 51em;
+    }
+  }
+
+  .item:nth-child(7) {
+    position: absolute;
+    top: 51em;
+    right: 51.5em;
+  }
+
+  .item:nth-child(8) {
+    position: absolute;
+    top: 76em;
+  }
+
+  .item:nth-child(9) {
+    position: absolute;
+    top: 76em;
+    right: 51.5em;
+  }
+
+  .item-loader {
+    width: 20%;
+    margin-top: 0;
+    margin-bottom: 7.5em;
+  }
+}
