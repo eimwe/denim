@@ -71,3 +71,27 @@
   position: static;
   transform: unset;
 }
+
+@media only screen and (min-width: 768px) {
+  .menu--mobile {
+    display: none;
+  }
+
+  .main-nav--header {
+    position: static;
+    height: auto;
+    width: auto;
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .logo--header {
+    margin-left: 0;
+    margin-right: 5em;
+  }
+
+  .service-nav {
+    width: auto;
+  }
+}

@@ -268,3 +268,47 @@ input[type=reset] {
   background-color: #fff;
 }
 //
+@media only screen and (min-width: 768px) {
+  .filter {
+    width: 30%;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    &__options {
+      top: 43px;
+      min-height: 290px;
+    }
+    &__header--mobile {
+      display: none;
+    }
+  }
+
+  input[type=reset] {
+    display: block;
+  }
+
+  input[type=submit],
+  input[type=reset] {
+    width: 81%;
+    margin-bottom: 0;
+  }
+
+  .color {
+    padding-bottom: .5em;
+  }
+  
+  input[type=radio] {
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .collect {
+    padding-bottom: .5em;
+    input[type=checkbox] {
+      & + label {
+        display: inline-block;
+        margin-right: 1.5em;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
