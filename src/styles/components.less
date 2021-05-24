@@ -1,4 +1,5 @@
-.nav__link {
+.nav__link,
+.item__link {
   font-family: 'WorkSans Medium';
   transition: var(--tranSpan);
   &:hover,
@@ -7,6 +8,26 @@
   &:focus-within {
     opacity: var(--blur);
     fill-opacity: var(--blur);
+  }
+}
+
+.breadcrumbs {
+  justify-content: flex-start;
+  font-size: 1.125rem;
+  li:not(:last-child)::after {
+    content: '/';
+    padding: 0 .5em 0 .5em;
+    color: var(--grey-darker);
+  }
+  .parent-crumb {
+    color: var(--grey-darker);
+  }
+  .current-crumb {
+    pointer-events: none;
+    cursor: default;
+    &:focus {
+      opacity: unset;
+    }
   }
 }
 

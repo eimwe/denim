@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
   </head>
-  <body>
+  <body lang="en">
     <header class="wrapper flex-container">
       <div class="menu--mobile" aria-label="menu" tabindex="0">
         <input type="checkbox" name="menu" id="menu-button">
@@ -47,6 +47,198 @@
         </ul>
       </nav>
     </header>
+    <section class="banner">
+      <div class="wrapper">
+        <div class="banner__area">
+          <ul class="breadcrumbs flex-container">
+            <li><a class="nav__link parent-crumb" href="#">All categories</a></li>
+            <li><a class="nav__link parent-crumb" href="#">Women</a></li>
+            <li><a class="nav__link current-crumb" href="#">Jackets</a></li>
+          </ul>
+          <h2 class="section__title banner__area__title"><a class="item__link" href="#" title="Check out our barnd-new collection">Denim Collection Fall 2019</a></h2>
+        </div>
+        <img class="banner__img" src="./images/catalog/banner/denim_patch.png" alt="Denim patch">
+      </div>
+    </section>
+    <main class="wrapper">
+      <form class="filter" action="#" method="POST">
+        <details>
+          <summary>Filter by</summary>
+          <div class="filter__options">
+            <div class="filter__header--mobile flex-container">
+              <span class="reset-button">Clear all</span>
+              <strong class="filter-title">Filters</strong>
+              <span class="close-button">Close</span>
+            </div>
+            <details>
+              <summary>Price</summary>
+              <div class="option price">
+                <input type="range" name="price" id="input-left" min="0" max="300" value="40">
+                <input type="range" name="price" id="input-right" min="0" max="300" value="240">
+                <div class="slider">
+                  <div class="track"></div>
+                  <div class="range"></div>
+                  <div class="thumb left"></div>
+                  <div class="price-left"></div>
+                  <div class="thumb right"></div>
+                  <div class="price-right"></div>
+                </div>
+              </div>
+            </details>
+            <details>
+              <summary>Color</summary>
+              <div class="option color">
+                <input type="radio" name="color" value="teal" checked>
+                <input type="radio" name="color" value="blue">
+                <input type="radio" name="color" value="grey">
+                <input type="radio" name="color" value="black">
+                <input type="radio" name="color" value="beige">
+                <input type="radio" name="color" value="aqua">
+              </div>
+            </details>
+            <details>
+              <summary>Collection</summary>
+              <div class="option collect">
+                <input type="checkbox" name="casual" id="casual-collection">
+                <label for="casual-collection">Casual</label>
+                <input type="checkbox" name="petite" id="petite-collection">
+                <label for="petite-collection">Petite</label>
+                <input type="checkbox" name="classic" id="classic-collection" checked>
+                <label for="classic-collection">Classic</label>
+                <input type="checkbox" name="soulluxe" id="soulluxe-collection">
+                <label for="soulluxe-collection">Soulluxe</label>
+              </div>
+            </details>
+            <input class="btn" type="submit" value="Apply (9 products)">
+            <input class="btn" type="reset" value="Clear all">
+          </div>
+        </details>
+      </form>
+      <section class="items flex-container">
+        <article class="item">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_1-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_1-768w.png">
+            <img src="./images/catalog/jacket_1.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 40</span>
+          </div>
+        </article>
+        <article class="item">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_2-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_2-768w.png">
+            <img src="./images/catalog/jacket_2.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 70</span>
+          </div>
+        </article>
+        <article class="item">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_3-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_3-768w.png">
+            <img src="./images/catalog/jacket_3.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 60</span>
+          </div>
+        </article>
+        <article class="item">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_4-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_4-768w.png">
+            <img src="./images/catalog/jacket_4.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 50</span>
+          </div>
+        </article>
+        <article class="item item--large">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_5-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_5-768w.png">
+            <img src="./images/catalog/jacket_5.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 160</span>
+          </div>
+        </article>
+        <article class="item">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_6-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_6-768w.png">
+            <img src="./images/catalog/jacket_6.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 40</span>
+          </div>
+        </article>
+        <article class="item">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_7-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_7-768w.png">
+            <img src="./images/catalog/jacket_7.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 110</span>
+          </div>
+        </article>
+        <article class="item">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_8-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_8-768w.png">
+            <img src="./images/catalog/jacket_8.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 35</span>
+          </div>
+        </article>
+        <article class="item">
+          <picture class="item-img">
+            <source media="(min-width: 1366px)" srcset="./images/catalog/jacket_9-1366w.png">
+            <source media="(min-width: 768px)" srcset="./images/catalog/jacket_9-768w.png">
+            <img src="./images/catalog/jacket_9.png" alt="Jacket">
+          </picture>
+          <div class="item-desc">
+            <h4 class="item-title">
+              <a class="item__link" href="product" title="Have a closer look">Jacket</a>
+            </h4>
+            <span class="item-price">&#36; 85</span>
+          </div>
+        </article>
+      </section>
+      <div class="item-loader">
+        <label for="loader-bar">Showing <span class="current-items">9</span> of <span class="left-items">45</span> items</label>
+        <progress id="loader-bar" max="45" value="9"></progress>
+        <button class="btn" type="button">Load more</button>
+      </div>
+    </main>
     <footer>
       <div class="wrapper">
         <span class="logo logo--footer">

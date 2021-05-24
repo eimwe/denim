@@ -36,6 +36,17 @@ h1, h2, h3, h4, p {
   margin: 0;
 }
 
+button,
+input[type=submit],
+input[type=reset] {
+  display: block;
+  border: none;
+  font: inherit;
+  &[disabled] {
+    opacity: .7;
+  }
+}
+
 .wrapper {
   width: 90%;
   max-width: 1200px;
