@@ -138,3 +138,95 @@ input[type=submit] {
 .nav__link--section {
   transform: translate(-6em, 30em);
 }
+
+@media only screen and (min-width: 768px) {
+  .product {
+    display: flex;
+    margin-top: 2.25em;
+    &__slideshow {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 5%;
+    }
+    &__desc {
+      margin-left: 2em;
+      padding-right: 5%;
+      padding-left: 3.125em;
+      .wrapper {
+        width: 100%;
+      }
+    }
+    &__about {
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+    &__price {
+      margin-top: 2.25em;
+      margin-bottom: 2.85em;
+    }
+  }
+
+  fieldset {
+    margin-top: 2.85em;
+  }
+
+  legend {
+    font-size: 1.125rem;
+  }
+
+  .prev-slide,
+  .next-slide {
+    display: none;
+  }
+
+  .slideshow__thumbnail-slide {
+    display: flex;
+    width: 20.25em;
+    margin-top: 1.375em;
+  }
+
+  .thumb-img{
+    margin-bottom: 1.375em;
+    &:first-child {
+      display: none;
+    }
+    &:last-of-type,
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .size {
+    input[type=checkbox] {
+      & + label {
+        margin-right: 1em;
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  input[type=radio] {
+    margin-right: 1.5em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .section-desc {
+    margin-bottom: 3.125em;
+  }
+
+  .item {
+    margin-bottom: 2.85em;
+    &:last-of-type,
+    &:nth-last-of-type(2) {
+      margin-bottom: 5.625em;
+    }
+  }
+
+  .nav__link--section {
+    transform: none;
+  }
+  
+}
