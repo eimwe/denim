@@ -15,6 +15,7 @@ module.exports = {
   entry: {
     main: './src/index.js',
     catalog: './src/catalog.js',
+    product: './src/product.js',
   },
   
   output: {
@@ -93,6 +94,11 @@ module.exports = {
       filename: 'catalog.html',
       template: './src/catalog.html',
       chunks: ['catalog'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'product.html',
+      template: './src/product.html',
+      chunks: ['product'],
     }),
   ],
 
