@@ -18,7 +18,18 @@
 
 .inactive {
   visibility: hidden;
-  opacity: 0;
+}
+
+.active {
+  visibility: visible;
+}
+
+.focused {
+  opacity: .7;
+}
+
+.unfocused {
+  opacity: 1;
 }
 
 .prev-slide,
@@ -188,9 +199,6 @@ input[type=submit] {
 
   .thumb-img{
     margin-bottom: 1.375em;
-    &:first-child {
-      display: none;
-    }
     &:last-of-type,
     &:nth-last-of-type(2) {
       margin-bottom: 0;
@@ -228,5 +236,64 @@ input[type=submit] {
   .nav__link--section {
     transform: none;
   }
+}
+
+@media only screen and (min-width: 1366px) {
+  .product {
+    margin-top: 3em;
+    &__slideshow {
+      padding-left: 12%;
+    }
+    &__desc {
+      margin-left: 3.75em;
+      padding-right: 12%;
+      padding-top: 4.375em;
+      padding-left: 4.375em;
+      padding-bottom: 4.375em;
+    }
+    &__about {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        width: 80%;
+      }
+    }
+    &__price {
+      margin-top: 2.25em;
+      margin-bottom: 2.85em;
+    }
+  }
   
+  .prev-slide,
+  .next-slide {
+    display: flex;
+    margin-bottom: 50%;
+    & > svg,
+    &> svg {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+
+  .slideshow__thumbnail-slide {
+    width: 25em;
+  }
+
+  .thumb-img{
+    margin-bottom: 0;
+  }
+
+  .item {
+    margin-bottom: 0;
+    &:last-of-type,
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .recommended {
+    margin-bottom: 8.125em;
+  }
 }

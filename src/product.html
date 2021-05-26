@@ -50,65 +50,58 @@
     <section class="product">
       <div class="product__slideshow wrapper">
         <div class="slideshow__controls flex-container">
-          <button class="prev-slide">
+          <button class="prev-slide nav__link">
             <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 1L2 9L10 17" stroke="#151C22" stroke-width="2"/>
             </svg>
           </button>
-          <div class="slideshow__fullsize-slide">
-            <picture class="full-img active">
-              <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_main-1366w.png">
-              <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_main-768w.png">
-              <img src="./images/product/gallery/full/product_main.png" alt="Full size product">
-            </picture>
-            <picture class="full-img inactive">
-              <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_1-1366w.jpg">
-              <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_1-768w.jpg">
-              <img src="./images/product/gallery/full/product_1.jpg" alt="Full size product">
-            </picture>
-            <picture class="full-img inactive">
-              <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_2-1366w.jpg">
-              <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_2-768w.jpg">
-              <img src="./images/product/gallery/full/product_2.jpg" alt="Full size product">
-            </picture>
-            <picture class="full-img inactive">
-              <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_3-1366w.jpg">
-              <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_3-768w.jpg">
-              <img src="./images/product/gallery/full/product_3.jpg" alt="Full size product">
-            </picture>
-            <picture class="full-img inactive">
-              <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_4-1366w.jpg">
-              <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_4-768w.jpg">
-              <img src="./images/product/gallery/full/product_4.jpg" alt="Full size product">
-            </picture>
+          <div class="slideshow__container">
+            <div class="slideshow__fullsize-slide">
+              <picture class="full-img active">
+                <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_1-1366w.png">
+                <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_1-768w.png">
+                <img src="./images/product/gallery/full/product_1.png" alt="Full size product">
+              </picture>
+              <picture class="full-img inactive">
+                <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_2-1366w.jpg">
+                <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_2-768w.jpg">
+                <img src="./images/product/gallery/full/product_2.jpg" alt="Full size product">
+              </picture>
+              <picture class="full-img inactive">
+                <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_3-1366w.jpg">
+                <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_3-768w.jpg">
+                <img src="./images/product/gallery/full/product_3.jpg" alt="Full size product">
+              </picture>
+              <picture class="full-img inactive">
+                <source media="(min-width: 1366px)" srcset="./images/product/gallery/full/product_4-1366w.jpg">
+                <source media="(min-width: 768px)" srcset="./images/product/gallery/full/product_4-768w.jpg">
+                <img src="./images/product/gallery/full/product_4.jpg" alt="Full size product">
+              </picture>
+            </div>
+            <div class="slideshow__thumbnail-slide flex-container">
+              <picture class="thumb-img focused">
+                <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_1-1366w.jpg">
+                <img src="./images/product/gallery/thumb/product_1-768w.jpg" alt="Thumbnail of the product">
+              </picture>
+              <picture class="thumb-img unfocused">
+                <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_2-1366w.png">
+                <img src="./images/product/gallery/thumb/product_2-768w.png" alt="Thumbnail of the product">
+              </picture>
+              <picture class="thumb-img unfocused">
+                <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_3-1366w.png">
+                <img src="./images/product/gallery/thumb/product_3-768w.png" alt="Thumbnail of the product">
+              </picture>
+              <picture class="thumb-img unfocused">
+                <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_4-1366w.png">
+                <img src="./images/product/gallery/thumb/product_4-768w.png" alt="Thumbnail of the product">
+              </picture>
+            </div>
           </div>
-          <button class="next-slide">
+          <button class="next-slide nav__link">
             <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 17L9 9L1 1" stroke="#151C22" stroke-width="2"/>
             </svg>
           </button>
-        </div>
-        <div class="slideshow__thumbnail-slide flex-container">
-          <picture class="thumb-img focused">
-            <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_main-1366w.jpg">
-            <img src="./images/product/gallery/thumb/product_main-768w.jpg" alt="Thumbnail of the product">
-          </picture>
-          <picture class="thumb-img unfocused">
-            <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_1-1366w.png">
-            <img src="./images/product/gallery/thumb/product_1-768w.png" alt="Thumbnail of the product">
-          </picture>
-          <picture class="thumb-img unfocused">
-            <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_2-1366w.png">
-            <img src="./images/product/gallery/thumb/product_2-768w.png" alt="Thumbnail of the product">
-          </picture>
-          <picture class="thumb-img unfocused">
-            <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_3-1366w.png">
-            <img src="./images/product/gallery/thumb/product_3-768w.png" alt="Thumbnail of the product">
-          </picture>
-          <picture class="thumb-img unfocused">
-            <source media="(min-width: 1366px)" srcset="./images/product/gallery/thumb/product_4-1366w.png">
-            <img src="./images/product/gallery/thumb/product_4-768w.png" alt="Thumbnail of the product">
-          </picture>
         </div>
       </div>
       <section class="product__desc">
